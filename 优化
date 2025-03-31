@@ -1,0 +1,3 @@
+#优化输入方法
+import sys
+input=sys.stdin.readline
