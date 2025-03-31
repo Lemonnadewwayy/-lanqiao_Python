@@ -1,4 +1,7 @@
 #字符类型的判断
-#判断是否只由字母组成：a.isalpha()
-#判断是否只由数字组成：a.isdigit()
-#判断是否只由空格组成：a.isspace()
+判断是否只由字母组成：a.isalpha()
+判断是否只由数字组成：a.isdigit()
+判断是否只由空格组成：a.isspace()
+
+堆
+import heapq
