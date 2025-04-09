@@ -1,0 +1,12 @@
+def day_of_week(y, m, d):
+    if m < 3:
+        m += 12
+        y -= 1
+    c = y // 100
+    y = y % 100
+    w = (y + y//4 + c//4 - 2*c + 26*(m+1)//10 + d - 1) % 7
+    return w if w >= 0 else w + 7
+
+y, m, d = map(int, input().split())
+week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+print(week[day_of_week(y, m, d)])
